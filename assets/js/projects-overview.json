@@ -1,0 +1,257 @@
+[
+  {
+    "id":"cei" ,
+    "title": "CEI (Centro de Estudios de Innovación)",
+    "categories": ["Branding", "Motion Graphics", "UX/UI"],
+    "description": "<b>Elevating the digital academic experience.</b> From brand communication through high-impact motion campaigns to the UX/UI restructuring of the student ecosystem. The goal: to transform functional tools into intuitive and visually stimulating experiences for the educational community.",
+    "thumbnail": "assets/IMGs/cei-thumbnail.png",
+    "gallery": [
+      {
+      "type": "vimeo", 
+      "src": "https://player.vimeo.com/video/974381911?h=a92e06dd82", 
+      "cols": 12, 
+      "aspect": "16-9"      
+      },
+      {
+      "type": "vimeo", 
+      "src": "https://player.vimeo.com/video/974388175?h=b822f77519", 
+      "cols": 12, 
+      "aspect": "16-9"      
+      },
+      {
+      "type": "vimeo", 
+      "src": "https://player.vimeo.com/video/974392862?h=2e31f77f38", 
+      "cols": 12, 
+      "aspect": "16-9"      
+      }   
+    ]
+  },
+  {
+    "id":"spain-up-nation" ,
+    "title": "Spain Up Nation",
+    "categories": ["Branding"],
+    "description": "<b>Identity for an innovation ecosystem.</b> Development of a visual system capable of positioning Spain as the ultimate hub for global investment. A country branding project driven by Enisa and the Ministry of Industry, designed under the strategic direction of Erretres to project the future of the business fabric.",
+    "thumbnail": "assets/IMGs/spain-up-nation-thumbnail.jpg",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-1.jpg",
+        "cols": 12,
+        "aspect": "16-9"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-2.jpg",
+        "cols": 4,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-3.jpg",
+        "cols": 4,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-4.jpg",
+        "cols": 4,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-5.jpg",
+        "cols": 6,
+        "aspect": "16-9"
+      },
+       {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-6.jpg",
+        "cols": 6,
+        "aspect": "16-9"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-7.jpg",
+        "cols": 6,
+        "aspect": "16-9"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-8.jpg",
+        "cols": 6,
+        "aspect": "16-9"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-9.jpg",
+        "cols": 6,
+        "aspect": "16-9"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/02-spain-up-nation/spain-up-nation-10.jpg",
+        "cols": 6,
+        "aspect": "16-9"
+      }
+    ]
+  },
+  {
+    "id":"campaña-covid-ayto-madrid" ,
+    "title": "Covid Campaign Madrid City Council",
+    "categories": ["Motion Graphics"],
+    "description":"<b>High impact institutional communication.</b> Development of audiovisual pieces for the health awareness campaign of the Madrid City Council. A massive digital deployment in neuralgic points such as Callao, designed to capture citizen attention in critical moments. Supervised by Aníbal Hernández." ,
+    "thumbnail": "assets/IMGs/covid-ayto-madrid-thumbnail.jpg",
+    "gallery": [
+      {
+        "type": "video",
+        "src": "assets/IMGs/03-covid-ayto-madrid/covid-ayto-madrid-callao.mp4",
+        "cols": 12,
+        "aspect": "16-9"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/covid-ayto-madrid-thumbnail.jpg",
+        "cols": 12,
+        "aspect": "16-9"
+      },
+      {
+        "type": "video",
+        "src": "assets/IMGs/03-covid-ayto-madrid/covid-ayto-madrid-mupi.mp4",
+        "cols": 12,
+        "aspect": "16-9"
+      }    ]
+  },
+   {
+    "id":"símbolo-hmy" ,
+    "title": "HMY symbol",
+    "categories": ["Branding"],
+    "description": "<b>Brand architecture for global retail.</b> Construction of a three-dimensional symbol that articulates the three pillars of the company: physical space, future projection, and the historical legacy of Yudigar. A visual identity created in Erretres to unify and project leadership in the sector.",
+    "thumbnail": "assets/IMGs/symbol-hmy-thumbnail.jpg",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "assets/IMGs/symbol-hmy-thumbnail.jpg",
+        "cols": 12,
+        "aspect": "16-9"
+      }
+    ]
+  },
+  {
+    "id":"zerapi" ,
+    "title": "zerapi",
+    "categories": ["UX/UI"],
+    "description": "<b>Product design focused on mental health.</b> Creation of an empathetic UX/UI experience that optimizes the search for psychological help. The platform crosses qualitative (personality, specialty) and quantitative data to ensure the ideal match between patient and therapist. Final Degree Project supervised by Miguel Ochando.",
+    "thumbnail": "assets/IMGs/zerapi-thumbnail.jpg",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "assets/IMGs/zerapi-thumbnail.jpg",
+        "cols": 12,
+        "aspect": "16-9"
+      },
+      {
+      "type": "vimeo", 
+      "src": "https://player.vimeo.com/video/594223841?h=0ec963c880", 
+      "cols": 12, 
+      "aspect": "16-9"      
+      }   
+    ]
+
+  },
+  {
+    "id":"kultura" ,
+    "title": "Kultura",
+    "categories": ["Experimental typography"],
+    "description": "<b>Ancestral morphology, variable technology.</b> Design of a variable display typography that adapts the Tagalog calligraphy (Baybayin) to the Latin alphabet.",
+    "thumbnail": "assets/IMGs/kultura-thumbnail.jpg",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "assets/IMGs/kultura-thumbnail.jpg",
+        "cols": 12,
+        "aspect": "16-9"
+      },
+      {
+      "type": "vimeo", 
+      "src": "https://player.vimeo.com/video/505197778?h=6fc7424144", 
+      "cols": 12, 
+      "aspect": "16-9"      
+      }   
+
+    ]
+
+  },
+  {
+    "id":"equiscursiva" ,
+    "title": "equiscursiva (x italic)",
+    "categories": ["Experimental typography", "Social media"],
+    "description": "<b>Visual and compositional exploration.</b> Personal space for graphic experimentation. Through the equiscursiva account, I develop new visual narratives by merging fine arts, complex ornamentation, and expressive typography, challenging the boundaries of traditional composition.",
+    "thumbnail": "assets/IMGs/equiscursiva-thumbnail.png",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/cursed.jpg",
+        "cols": 6,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/maniera.jpg",
+        "cols": 6,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/love.jpg",
+        "cols": 6,
+        "aspect": "1-1"
+      },
+      {
+        "type": "video",
+        "src": "assets/IMGs/04-equiscursiva/dejavu.mp4",
+        "cols": 6,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/exctasy.png",
+        "cols": 6,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/tristesse.jpg",
+        "cols": 6,
+        "aspect": "1-1"
+      },
+      {
+        "type": "image",
+        "src": "assets/IMGs/equiscursiva-thumbnail.png",
+        "cols": 12,
+        "aspect": "16-9"
+      },
+
+      {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/diaspora.png",
+        "cols": 6,
+        "aspect": "3-4"
+      },
+      {
+        "type": "video",
+        "src": "assets/IMGs/04-equiscursiva/alone.mp4",
+        "cols": 6,
+        "aspect": "3-4"
+      },
+            {
+        "type": "image",
+        "src": "assets/IMGs/04-equiscursiva/again.png",
+        "cols": 6,
+        "aspect": "3-4"
+      }
+
+    ]
+
+  }
+  
+]

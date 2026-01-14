@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrián de Jesús - Creative Designer</title>
+    <link rel="icon" type="image/x-icon" href="assets/IMGs/favicon.png">
+    <!--     CSS  -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/work.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+     <!--     Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mea+Culpa&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="desktopMenu">
+        <ul class="linksMenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="mailto:hola@adriandejesus.com">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <button class="hamburgerBtn" id="menuOpen" aria-label="Open Menu">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </button>
+
+    <div class="mobileOverlay" id="menuOverlay">
+        <nav class="overlayNav">
+            <ul class="overlayLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="mailto:hola@adriandejesus.com">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="overlayFooter">
+            <span>MADRID, SPAIN</span>
+            <span>© 2025</span>
+        </div>
+    </div>
+</header>
+
+<main class="mainContentWeb">
+    
+    <section class="mainSectionHome">
+        <video autoplay muted loop class="videoBackgroundWeb">
+            <source src="assets/videos/home-bg.mp4" type="video/mp4">
+        </video>
+        <h1 class="mainTitleHome">
+            Adrián <span class="highlightTitleHome">De Jesús</span>
+        </h1>
+    </section>
+
+    <section class="aboutSection" id="aboutSection">
+        <div class="aboutContainer">
+            <div class="aboutVisual">
+                <img src="assets/IMGs/adrian-de-jesus.jpg" alt="Adrián de Jesús" class="aboutImage">
+            </div>
+            <div class="aboutContent">
+                <h2 class="aboutHeadline">Visual design & strategic thinking for a moving world.</h2>
+                <div class="aboutBody">
+                    <p>Hi, I'm <strong>Adrián de Jesús</strong>. A creative passionate about exploring the intersection of technology and the humanities.</p>
+                    <a href="about.html" class="aboutLink">More about me <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featuredSection">
+        <div class="featuredContainer">
+            
+            <h2 class="featuredHeadline">Discover my latest work and creative solutions that bring ideas to life</h2>
+            
+            <div class="featuredGrid">
+                
+                <div class="featuredCard">
+                    <div class="featuredCardHeader">
+                        <h3 class="featuredTitle">CEI</h3>
+                        <div class="chips"><span class="chip">Branding</span></div>
+                    </div>
+                    <a href="project-detail.html?id=cei" class="featuredImageWrapper">
+                        <img src="assets/IMGs/cei-thumbnail.png" alt="CEI Project" class="featuredImg">
+                    </a>
+                </div>
+
+                <div class="featuredCard">
+                    <div class="featuredCardHeader">
+                        <h3 class="featuredTitle">Spain Up Nation</h3>
+                        <div class="chips">
+                            <span class="chip">Branding</span>
+                        </div>
+                    </div>
+                    <a href="project-detail.html?id=spain-up-nation" class="featuredImageWrapper">
+                        <img src="assets/IMGs/spain-up-nation-thumbnail.jpg" alt="Spain Up Nation" class="featuredImg">
+                        <div class="featuredOverlay"></div>
+                    </a>
+                </div>
+
+                <div class="featuredCard">
+                    <div class="featuredCardHeader">
+                        <h3 class="featuredTitle">Covid Campaign Madrid City Council</h3>
+                        <div class="chips">
+                            <span class="chip">Motion Graphics</span>
+                        </div>
+                    </div>
+                    <a href="project-detail.html?id=campaña-covid-ayto-madrid" class="featuredImageWrapper">
+                        <img src="assets/IMGs/covid-ayto-madrid-thumbnail.jpg" alt="Campaña Covid Ayto Madrid" class="featuredImg">
+                        <div class="featuredOverlay"></div>
+                    </a>
+                </div>
+
+                <div class="featuredCard">
+                    <div class="featuredCardHeader">
+                        <h3 class="featuredTitle">equiscursiva</h3>
+                        <div class="chips">
+                            <span class="chip">Experimental Typography</span>
+                            <span class="chip">Social Media</span>
+                        </div>
+                    </div>
+                    <a href="project-detail.html?id=equiscursiva" class="featuredImageWrapper">
+                        <img src="assets/IMGs/equiscursiva-thumbnail.png" alt="equiscursiva" class="featuredImg">
+                        <div class="featuredOverlay"></div>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="featuredButtonContainer">
+                <a href="work.html" class="pillButton">All Projects</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footerGrid">
+        <div class="footerBlock links">
+            <a href="https://www.linkedin.com/in/adrian-de-jesus-fernandez/" target="_blank">LinkedIn</a>
+            <a href="mailto:hola@adriandejesus.com">Email</a>
+            <a href="https://www.instagram.com/equiscursiva" target="_blank">Instagram</a>
+        </div>
+
+        <div class="footerBlock info">
+            <span>All content Copyright © 2025 Adrián de Jesús - All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

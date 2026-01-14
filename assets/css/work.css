@@ -1,0 +1,349 @@
+/* =========================================
+   HOME: MAIN SECTION
+   ========================================= */
+
+body .videoBackgroundWeb {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: blur(20px);
+    transform: scale(1.1);
+}
+
+.mainContentWeb .mainSectionHome {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainContentWeb .mainSectionHome .mainTitleHome {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.3em;
+    font-size: clamp(3.5rem, 10vw, 9rem);
+    font-weight: 250;
+    color: #FFFFFF;
+    mix-blend-mode: difference;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.mainContentWeb .mainSectionHome .mainTitleHome .highlightTitleHome {
+    font-family: "Mea Culpa", Times, cursive;
+    font-weight: 400;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContentWeb .mainSectionHome .mainTitleHome {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        font-size: clamp(4rem, 15vw, 6rem);
+        line-height: 1.1;
+    }
+}
+   
+.chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: var(--muted);
+    color: var(--text);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .18s ease;
+}
+
+
+/* =========================================
+   PROJECTS LIST (Work Page)
+   ========================================= */
+
+.mainContentWeb .projectContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 4rem 2rem 8rem 2rem;
+    background-color: var(--bg);
+    background-image: url(../IMGs/work-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mainContentWeb .projectContainer h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--highlight);
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Aspiracional Intro Text */
+
+.mainContentWeb .projectContainer .projectsIntro {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--text);
+    text-align: left;
+    margin: 0 0 3rem 0;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 50%;
+    box-sizing: border-box;
+}
+
+.mainContentWeb .projectContainer .projectsListContainer {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* List Item */
+
+.mainContentWeb .projectContainer .projectsListContainer .menuItem {
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: var(--text);
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition: all .18s ease;
+    text-decoration: none;
+}
+
+.mainContentWeb .projectContainer .projectsListContainer .menuItem:hover {
+    padding-left: 12px;
+}
+
+/* Inner Text Styles */
+
+.mainContentWeb .projectContainer .projectsListContainer .menuItem .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all .18s ease;
+}
+
+.mainContentWeb .projectContainer .projectsListContainer .menuItem:hover .title {
+    color: var(--highlight);
+    transform: translateX(4px);
+}
+
+.mainContentWeb .projectContainer .projectsListContainer .menuItem:hover .chips .chip {
+    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
+    color: #F9F8F8;
+}
+
+/* Responsive Work List */
+@media screen and (max-width: 900px) {
+    .mainContentWeb .projectContainer { padding: 100px 2rem 2rem 2rem; }
+    .mainContentWeb .projectContainer h2 { font-size: 2.5rem; margin-bottom: 2rem; }
+    .mainContentWeb .projectContainer .projectsIntro { padding-right: 0; }
+}
+
+@media screen and (max-width: 600px) {
+    .mainContentWeb .projectContainer .projectsListContainer .menuItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 1.5rem 0;
+    }
+    .mainContentWeb .projectContainer .projectsListContainer .menuItem:hover { padding-left: 0; }
+    .title { font-size: 1.2rem; }
+}
+
+/* =========================================
+   FEATURED SECTION (Home)
+   ========================================= */
+
+.featuredSection {
+    width: 100%;
+    min-height: 100vh;
+    padding: 6rem 3rem;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--gray);
+}
+
+.featuredSection .featuredContainer {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.featuredSection .featuredContainer .featuredHeadline {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.1;
+    width: 100%;
+    color: var(--text);
+    margin: 0;
+}
+
+.featuredSection .featuredContainer .featuredGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .featuredSection .featuredContainer .featuredGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: start;
+    }
+}
+
+/* Featured Card */
+
+.featuredCard .featuredCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.featuredCard .featuredCardHeader .featuredTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--text);
+}
+
+/* HOVER EFFECT: FEATURED CARD */
+
+.featuredCard:hover .featuredCardHeader .featuredTitle { 
+    color: var(--highlight); 
+}
+
+.featuredCard:hover .chip {
+    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
+    color: #F9F8F8;
+}
+
+.featuredCard .featuredImageWrapper {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.featuredCard .featuredImageWrapper .featuredImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.featuredCard:hover .featuredImageWrapper .featuredImg { transform: scale(1.05); }
+
+/* Buttons */
+
+.featuredButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pillButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: var(--muted);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pillButton:hover {
+    gap: 1.5rem;
+    transform: translateY(-2px);
+    background: var(--highlight); 
+    color: #F9F8F8;
+}
+
+/* =========================================
+   PREVIEW WRAPPER (Floating)
+   ========================================= */
+
+.previewWrapper {
+    position: fixed;
+    right: 35%;
+    width: 420px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 30;
+    opacity: 0;
+    transform: scale(0.95) translateY(-50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.previewWrapper.visible {
+    opacity: 1;
+    transform: scale(1) translateY(-50%);
+    right: 35%;
+}
+
+.previewWrapper .previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 900px) {
+    .previewWrapper { display: none !important; }
+}

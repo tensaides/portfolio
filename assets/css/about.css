@@ -1,0 +1,523 @@
+/* =========================================
+   1. HOME ABOUT SECTION (La sección oscura del index.html)
+   ========================================= */
+
+.aboutSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--line);
+    color: var(--bg); 
+    padding: 4rem 2rem;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Efecto de luz de fondo */
+.aboutSection::before {
+    content: '';
+    position: absolute;
+    top: -20%; right: -10%; width: 80%; height: 100%;
+    background: radial-gradient(circle at center, var(--purple), transparent 60%);
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(100px);
+}
+
+.aboutSection .aboutContainer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Imagen visual */
+.aboutSection .aboutContainer .aboutVisual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection .aboutContainer .aboutVisual .aboutImage {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    opacity: 1; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Contenido texto */
+.aboutSection .aboutContainer .aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aboutSection .aboutContainer .aboutContent .aboutHeadline {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    width: auto;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--highlight);
+    margin: 0;
+    padding-right: 2em;
+}
+
+.aboutSection .aboutContainer .aboutContent .aboutBody {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 200;
+    color: var(--bg);
+    opacity: 0.9;
+    width: 100%;
+    max-width: 600px;
+}
+
+.aboutSection .aboutContainer .aboutContent .aboutBody strong {
+    color: var(--bg);
+    font-weight: 600;
+}
+
+.aboutSection .aboutContainer .aboutContent .aboutBody .aboutLink {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.aboutSection .aboutContainer .aboutContent .aboutBody .aboutLink:hover {
+    color: var(--highlight);
+    border-color: var(--highlight);
+}
+
+/* Responsive Home About */
+@media screen and (max-width: 900px) {
+    .aboutSection .aboutContainer { grid-template-columns: 1fr; gap: 3rem; }
+    .aboutSection .aboutContainer .aboutContent .aboutHeadline { padding-right: 0;}
+    .aboutSection .aboutContainer .aboutVisual { display: none; }
+}
+
+
+/* ===============
+   2. ABOUT PAGE
+   =============== */
+
+.aboutScrollWrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutHorizontalContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 200%; 
+    will-change: transform;
+}
+
+.horizPanel {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* --- PANEL 1: SPLIT START --- */
+
+.panelSplitStart {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
+
+.splitHalf {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.splitIntroBlack {
+    background-color: var(--line);
+    color: var(--bg);
+    padding: 4rem;
+    align-items: flex-start;
+}
+
+.splitLeftInfoContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hugeInfoTitle {
+    font-family: "Inter", sans-serif;
+    font-size: 8rem;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: -0.04em;
+}
+
+.bioHighlight { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.bioHighlight p { font-size: 1rem; font-weight: 200; line-height: 1.5; margin: 0; }
+.bioHighlight p strong { font-weight: 600; color: var(--highlight); }
+
+.infoFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.infoContact { 
+    display: flex; 
+    flex-direction: column; 
+    text-align: left; 
+}
+.infoContact span { 
+    color: var(--highlight); 
+}
+.infoContact a { 
+    color: var(--bg); 
+    text-decoration: none; 
+    margin-top: 5px; 
+}
+
+.splitImageRight { 
+    background-color: var(--bg); 
+    padding: 0; 
+    overflow: hidden; 
+}
+.heroImageScroll { 
+    width: 100%;
+     height: 100%; 
+    object-fit: cover;
+    object-position: 0% 28%; 
+    display: block;
+ }
+
+
+/* --- PANEL 2: TEXTO + SVG --- */
+
+.panelSplitTextImg { 
+    display: flex; 
+    width: 100vw; 
+    height: 100vh; 
+    padding: 0; 
+    background-color: var(--bg); 
+}
+
+.splitTextLeft {
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 4rem;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.extendedBioContent {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.extendedBioContent h2 { 
+    font-size: 2.5rem; 
+    line-height: 1.1; 
+    margin-bottom: 2rem; 
+    font-weight: 500;
+}
+
+.extendedBioContent p { 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    font-weight: 300; 
+    opacity: 0.95; 
+}
+
+.splitSvgRight { 
+    background-color: var(--bg); 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: left; 
+}
+.svgBlockImg { width: 100%; height: auto; max-height: 100vh; object-fit: cover; }
+
+
+/* --- RESPONSIVE HORIZONTAL --- */
+@media screen and (max-width: 900px) {
+    .aboutHorizontalContainer { width: 100%; flex-direction: column; height: auto; }
+    
+    .panelSplitStart, .panelSplitTextImg { flex-direction: column; height: auto; width: 100%; }
+    .horizPanel { width: 100%; height: auto; }
+    .horizPanel, .splitHalf, .splitLeftInfoContent p { width: 100%; 
+    height: auto;
+    font-size: 1.4rem;
+    font-weight: 200; }
+
+    .splitHalf, .splitTextLeft, .splitSvgRight { width: 100%; height: 100vh; }
+    
+    .splitIntroBlack { min-height: 60vh; padding: 2rem; }
+    .splitImageRight { height: 50vh; }
+    
+    .hugeInfoTitle { font-size: 20vw; }
+    
+    .splitTextLeft { padding: 4rem 2rem; order: 1; }
+    .splitSvgRight { height: 50vh; order: 2; padding: 2rem; }
+}
+
+
+/* =========================================
+   3. EXPERIENCE SECTION
+   ========================================= */
+
+.experienceSection {
+    padding: 0rem 2rem 8rem 2rem;
+    background-color: var(--bg);
+    border-top: 1px solid var(--gray);
+}
+
+.experienceContainer { 
+    width: 100%; 
+    max-width: 1300px;
+     margin: 0 auto; 
+    }
+
+.sectionTitle { 
+    font-size: 3rem; 
+    margin: 6rem 0 4rem 0; 
+    color: var(--highlight); 
+    font-weight: 500; }
+
+.experienceList { display: flex; flex-direction: column; gap: 16px; }
+
+.experienceItem {
+    display: grid;
+    grid-template-columns: 180px 60px 1.2fr 1fr 1.5fr;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    gap: 1.5rem;
+}
+
+.experienceItem:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+}
+
+.expDate { 
+    grid-column: 1; 
+    font-size: 0.9rem; 
+    color: var(--gray); 
+    font-weight: 500; 
+    white-space: nowrap; 
+}
+.expAvatar { 
+    grid-column: 2;
+     width: 48px; 
+    height: 48px; 
+    border-radius: 8px;
+     overflow: hidden; 
+}
+
+.expAvatar img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+ }
+
+.expCompany { 
+    grid-column: 3; 
+    font-size: 1.2rem; 
+    font-weight: 500; 
+}
+
+.expRole { 
+    grid-column: 4; 
+    font-size: 1.1rem; 
+    font-weight: 300; 
+}
+
+.expChips { 
+    grid-column: 5; 
+    display: flex; gap: 8px; 
+    justify-content: flex-end; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+
+}
+.expChips .chip { 
+    background-color: var(--muted);
+     padding: 4px 8px; 
+    border-radius: 4px; 
+    font-size: 0.8rem; 
+}
+
+.experienceItem:hover .expChips .chip { 
+    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
+    color: var(--bg); 
+}
+
+/* --- RESPONSIVE  --- */
+
+@media screen and (max-width: 900px) {
+    .experienceItem { grid-template-columns: 60px 1fr auto; grid-template-rows: auto auto; gap: 0.5rem 1rem; }
+    .expAvatar { grid-column: 1; grid-row: 1 / 3; }
+    .expCompany { grid-column: 2; grid-row: 1; }
+    .expDate { grid-column: 3; grid-row: 1; text-align: right; }
+    .expRole { grid-column: 2 / 4; grid-row: 2; }
+    .expChips { grid-column: 1 / 4; grid-row: 3; justify-content: flex-start; }
+}
+
+.expChips { 
+    grid-column: 5; 
+    display: flex; 
+    gap: 8px; 
+    justify-content: flex-end; 
+    flex-wrap: wrap; 
+}
+
+
+.expChips .chip { 
+    display: inline-block;
+    padding: 5px 10px;          
+    border-radius: 4px;          
+    background: var(--muted);   
+    color: var(--text);         
+    font-size: 0.8rem;          
+    text-transform: uppercase;  
+    letter-spacing: 2px;         
+    transition: all .18s ease;  
+    white-space: nowrap;        
+}
+
+.experienceItem:hover .expChips .chip { 
+    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
+    color: #F9F8F8; 
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .expChips { 
+        grid-column: 1 / 4; 
+        grid-row: 3; 
+        justify-content: flex-start; 
+        margin-top: 8px;
+    }
+}
+/* =========================================
+   4. SKILLS SECTION (Dark)
+   ========================================= */
+
+.skillsDarkSection {
+    position: relative;
+    background-color: var(--line);
+    color: var(--bg);
+    padding: 6rem 3rem 12rem 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsDarkSection::before {
+    content: '';
+    position: absolute;
+    top: -20%; right: -10%; width: 80%; height: 100%;
+    background: radial-gradient(circle at center, var(--purple), transparent 60%);
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(100px);
+}
+
+.skillsDarkSection .skillsDarkContainer {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+
+}
+
+.hugeSkillsTitle {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+.skillsCenteredContent { width: 100%; }
+
+.skillsListsBlock { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    width: 100%; 
+}
+.skillGroup { display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
+.skillLabel { font-size: 1.2rem; 
+    text-transform: uppercase; 
+    color: var(--highlight);
+    font-weight: 500;
+    letter-spacing: 0.1rem; 
+    margin: 0; 
+}
+.skillList { list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.skillList li { font-size: 1.2rem; 
+    font-weight: 300; 
+    line-height: 1.4; 
+    margin-bottom: 0.5rem; 
+
+}
+
+@media screen and (max-width: 900px) {
+    .skillsListsBlock { grid-template-columns: 1fr; gap: 4rem; }
+    .skillGroup, .skillLabel, .skillList li { font-size: 1.5rem; }
+}

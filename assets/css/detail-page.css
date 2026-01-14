@@ -1,0 +1,130 @@
+/* =========================================
+   PROJECT DETAIL
+   ========================================= */
+
+.detailMainContainer {
+    padding: 120px 3rem 4rem 3rem;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.detailGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Sidebar (3 cols) */
+.detailSidebar { grid-column: span 3; position: relative; }
+
+.sidebarStickyContent {
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    opacity: 0.6;
+}
+.backLink:hover { opacity: 1; color: var(--highlight); }
+
+.detailTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+    color: var(--highlight);
+}
+
+.galleryChips { 
+    margin-bottom: 2rem; 
+    flex-wrap: wrap; 
+    display: flex; 
+    gap: 8px;
+}
+
+.galleryChips .chip { 
+    background: var(--muted); 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    font-size: 0.8rem; 
+    text-transform: uppercase;
+
+}
+
+.detailDescription p { 
+    font-size: 1.2rem;
+    font-weight: 300; 
+    line-height: 1.4;
+    letter-spacing: 0.03rem;
+    white-space: pre-line; 
+
+}
+
+/* Gallery (9 cols) */
+
+.detailGalleryContainer {
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    align-content: start;
+}
+
+.galleryItem {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--muted);
+}
+
+.galleryItem img, 
+.galleryItem video, 
+.galleryItem iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galleryItem iframe { object-fit: contain; }
+
+/* Columns */
+.col12 { grid-column: span 12; }
+.col11 { grid-column: span 11; }
+.col10 { grid-column: span 10; }
+.col9  { grid-column: span 9; }
+.col8  { grid-column: span 8; }
+.col7  { grid-column: span 7; }
+.col6  { grid-column: span 6; }
+.col5  { grid-column: span 5; }
+.col4  { grid-column: span 4; }
+.col3  { grid-column: span 3; }
+
+/* Ratios */
+.ratio16-9 { aspect-ratio: 16 / 9; }
+.ratio1-1  { aspect-ratio: 1 / 1; }
+.ratio3-4  { aspect-ratio: 3 / 4; }
+.ratioAuto { height: auto; }
+
+@media screen and (max-width: 900px) {
+    .detailMainContainer { padding: 100px 1.5rem 2rem 1.5rem; }
+    .detailGrid { grid-template-columns: 1fr; gap: 3rem; }
+    .detailSidebar { grid-column: span 1; }
+    .sidebarStickyContent { position: relative; top: 0; max-height: none; padding-right: 0; }
+    .detailGalleryContainer { grid-column: span 1; gap: 1rem; }
+    .col3, .col4, .col6 { grid-column: span 12; } 
+}
