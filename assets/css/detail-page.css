@@ -119,6 +119,7 @@
 .ratio1-1  { aspect-ratio: 1 / 1; }
 .ratio3-4  { aspect-ratio: 3 / 4; }
 .ratioAuto { height: auto; }
+.ratioFigma { aspect-ratio: 16 / 10; }
 
 @media screen and (max-width: 900px) {
     .detailMainContainer { padding: 100px 1.5rem 2rem 1.5rem; }
