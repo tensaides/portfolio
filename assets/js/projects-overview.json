@@ -1,5 +1,20 @@
 [
   {
+    "id":"sapienza-design-system" ,
+    "title": "Sapienza Design System",
+    "categories": ["UX/UI"],
+    "description": "<b>Constructing digital foundations.</b> Development of a fully scalable Design System using the Atomic Design methodology. This project reimagines the Sapienza web portal through a strict library of components and semantic tokens created in Figma. A visual overhaul that prioritizes hierarchy and modularity, bridging the gap between institutional heritage and modern web scalability. <br> <div class=\"featuredButtonContainer\"><a href='https://www.figma.com/design/Fq4eFWewOjjrqwE8e3glXp/01_sistema_de-Jesus_Adrian?node-id=208-3091&t=8hX4V4EBluglwFAW-1' target='_blank' class='pillButton'>View Project in Figma ↗</a> </div>",
+    "thumbnail": "assets/IMGs/sapienza-thumbnail.jpg",
+    "gallery": [
+    {
+      "type": "figma",
+      "src": "https://embed.figma.com/design/Fq4eFWewOjjrqwE8e3glXp/01_sistema_de-Jesus_Adrian?node-id=208-3091&embed-host=share",
+      "cols": 12,
+      "aspect": "16-9"
+    }   
+    ]
+  },
+  {
     "id":"cei" ,
     "title": "CEI (Centro de Estudios de Innovación)",
     "categories": ["Branding", "Motion Graphics", "UX/UI"],

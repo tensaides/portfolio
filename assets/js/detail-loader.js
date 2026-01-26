@@ -74,7 +74,18 @@ document.addEventListener("DOMContentLoaded", () => {
                         iframe.setAttribute('allowfullscreen', '');
                         iframe.style.border = 'none';
                         galleryItemDiv.appendChild(iframe);
+
+                    // 4. FIGMA 
+                    
+                    } else if (item.type === 'figma') {
+                        const iframe = document.createElement('iframe');
+                        iframe.src = item.src;
+                        iframe.setAttribute('allowfullscreen', '');
+                        // Estilo específico para que el embed de Figma se vea integrado y elegante
+                        iframe.style.border = '1px solid rgba(0,0,0,0.1)'; 
+                        galleryItemDiv.appendChild(iframe);
                     }
+                    
 
                     galleryContainerEl.appendChild(galleryItemDiv);
                 });
