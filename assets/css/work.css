@@ -68,8 +68,6 @@ body .videoBackgroundWeb {
 .chip {
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 4px;
-    background: var(--muted);
     color: var(--text);
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -165,10 +163,6 @@ body .videoBackgroundWeb {
     transform: translateX(4px);
 }
 
-.mainContentWeb .projectContainer .projectsListContainer .menuItem:hover .chips .chip {
-    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
-    color: #F9F8F8;
-}
 
 /* Responsive Work List */
 @media screen and (max-width: 900px) {
@@ -260,10 +254,6 @@ body .videoBackgroundWeb {
     color: var(--highlight); 
 }
 
-.featuredCard:hover .chip {
-    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
-    color: #F9F8F8;
-}
 
 .featuredCard .featuredImageWrapper {
     display: block;
