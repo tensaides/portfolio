@@ -338,11 +338,6 @@
     gap: 1.5rem;
 }
 
-.experienceItem:hover { 
-    transform: translateY(-2px); 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
-}
-
 .expDate { 
     grid-column: 1; 
     font-size: 0.9rem; 
@@ -385,15 +380,9 @@
 
 }
 .expChips .chip { 
-    background-color: var(--muted);
      padding: 4px 8px; 
     border-radius: 4px; 
     font-size: 0.8rem; 
-}
-
-.experienceItem:hover .expChips .chip { 
-    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
-    color: var(--bg); 
 }
 
 /* --- RESPONSIVE  --- */
@@ -419,19 +408,13 @@
 .expChips .chip { 
     display: inline-block;
     padding: 5px 10px;          
-    border-radius: 4px;          
-    background: var(--muted);   
+    border-radius: 4px;             
     color: var(--text);         
     font-size: 0.8rem;          
     text-transform: uppercase;  
     letter-spacing: 2px;         
     transition: all .18s ease;  
     white-space: nowrap;        
-}
-
-.experienceItem:hover .expChips .chip { 
-    background: linear-gradient(45deg, var(--highlight), var(--red-orange), var(--purple)); 
-    color: #F9F8F8; 
 }
 
 
