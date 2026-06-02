@@ -101,10 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 row.style.textDecoration = "none";
                 row.style.display = "flex"; 
 
+                
                 row.innerHTML = `
                     <div class="title">${project.title}</div>
                     <div class="chips">
                         ${project.categories.map(cat => `<span class="chip">${cat}</span>`).join('')}
+                    </div>
+                    <div class="mobileProjectImg">
+                        <img src="${project.thumbnail}" alt="${project.title}">
                     </div>
                 `;
 
