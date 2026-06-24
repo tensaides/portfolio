@@ -7,6 +7,18 @@
     "thumbnail": "assets/IMGs/sapienza-thumbnail.jpg",
     "gallery": [
     {
+      "type": "image",
+      "src": "assets/IMGs/sapienza-thumbnail.jpg",
+      "cols": 12,
+      "aspect": "16-9"
+    },
+    {
+      "type":"video",
+      "src":"assets/videos/sapienza_desktop_screenrecord.mp4",
+      "cols": 12,
+      "aspect": "16-9"
+    },
+    {
       "type": "figma",
       "src": "https://embed.figma.com/design/Fq4eFWewOjjrqwE8e3glXp/01_sistema_de-Jesus_Adrian?node-id=208-3091&embed-host=share",
       "cols": 12,
