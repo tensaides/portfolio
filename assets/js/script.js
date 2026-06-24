@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 row.style.textDecoration = "none";
                 row.style.display = "flex"; 
 
-                
+                // Corregido: Añadimos el contenedor 'mobileProjectImg' que pide tu CSS para tablets/móviles
                 row.innerHTML = `
                     <div class="title">${project.title}</div>
                     <div class="chips">
@@ -113,17 +113,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
 
                 row.addEventListener("mouseenter", () => {
-                    if (previewWrapper && previewImg) {
-                        const rowRect = row.getBoundingClientRect();
-                        const rowCenterY = rowRect.top + (rowRect.height / 2);
-                        previewWrapper.style.top = `${rowCenterY}px`;
-                        previewImg.src = row.dataset.thumbnail;
-                        previewWrapper.classList.add("visible");
+                    // Condición: Solo se ejecuta si la pantalla es mayor a 900px (Desktop)
+                    if (window.matchMedia("(min-width: 901px)").matches) {
+                        if (previewWrapper && previewImg) {
+                            const rowRect = row.getBoundingClientRect();
+                            const rowCenterY = rowRect.top + (rowRect.height / 2);
+                            previewWrapper.style.top = `${rowCenterY}px`;
+                            previewImg.src = row.dataset.thumbnail;
+                            previewWrapper.classList.add("visible");
+                        }
                     }
                 });
+
                 row.addEventListener("mouseleave", () => {
+                    // Siempre removemos la clase por seguridad al salir del elemento
                     if (previewWrapper) previewWrapper.classList.remove("visible");
                 });
+
                 projectList.appendChild(row);
             });
         });
