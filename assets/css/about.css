@@ -282,6 +282,11 @@
 
 /* --- RESPONSIVE HORIZONTAL --- */
 @media screen and (max-width: 900px) {
+
+    .aboutScrollWrapper {
+        height: auto;
+        overflow: visible;
+    }
     .aboutHorizontalContainer { width: 100%; flex-direction: column; height: auto; }
     
     .panelSplitStart, .panelSplitTextImg { flex-direction: column; height: auto; width: 100%; }
