@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 row.className = "menuItem";
                 row.dataset.thumbnail = project.thumbnail;
                 row.style.textDecoration = "none";
-                row.style.display = "flex"; 
+                //row.style.display = "flex";
 
                 // Corregido: Añadimos el contenedor 'mobileProjectImg' que pide tu CSS para tablets/móviles
                 row.innerHTML = `
