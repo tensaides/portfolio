@@ -243,6 +243,7 @@ footer .footerGrid .footerBlock.links a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    footer .footerGrid .footerBlock.links,
-    footer .footerGrid .footerBlock.info { justify-content: center; }
+    footer {
+        display: none;
+    }
 }
