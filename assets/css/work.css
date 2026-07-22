@@ -340,9 +340,16 @@ body .videoBackgroundWeb {
 }
 
 
+/* =========================================
+   RESPONSIVE (MÓVIL Y TABLET < 900px)
+   ========================================= */
+
+.mainContentWeb .projectContainer .projectsListContainer .menuItem .mobileProjectImg {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     
-    /* Ajustes del contenedor de la página */
     .mainContentWeb .projectContainer { 
         padding: 100px 2rem 4rem 2rem;
         background-image: none; 
@@ -355,33 +362,30 @@ body .videoBackgroundWeb {
         padding-right: 0; 
     }
 
-    /* 1. Pasamos el contenedor de una lista a una rejilla de tarjetas (Como en la Home) */
+    /* Transformación a Rejilla de Cards */
     .mainContentWeb .projectContainer .projectsListContainer {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 3rem; /* Espacio idéntico al featuredGrid de la Home */
+        gap: 3rem;
         width: 100%;
     }
 
-    /* 2. Convertimos la fila de la tabla en una Card usando CSS Grid */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem {
         display: grid !important;
-        grid-template-columns: 1fr auto; /* Título a la izquierda, fichas a la derecha */
+        grid-template-columns: 1fr auto;
         gap: 1rem;
         padding: 0;
-        border-bottom: none; /* Quitamos la línea de la tabla */
+        border-bottom: none;
     }
 
-    /* Anulamos efectos de desplazamiento de escritorio que romperían el móvil */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem:hover { 
         padding-left: 0; 
     }
     .mainContentWeb .projectContainer .projectsListContainer .menuItem:hover .title {
         transform: none;
-        color: var(--highlight); /* El título se ilumina al pasar el dedo/ratón */
+        color: var(--highlight);
     }
 
-    /* 3. Estilos del Título (Clonando la estética de la Home) */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .title {
         grid-column: 1;
         grid-row: 1;
@@ -390,7 +394,6 @@ body .videoBackgroundWeb {
         margin: 0;
     }
 
-    /* 4. Estilos de las Etiquetas (Alineadas a la derecha en la misma línea) */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .chips {
         grid-column: 2;
         grid-row: 1;
@@ -399,19 +402,17 @@ body .videoBackgroundWeb {
         justify-content: flex-end;
     }
 
-    /* 5. Activamos y clonamos el contenedor de imagen de la Home (featuredImageWrapper) */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .mobileProjectImg {
-        display: block; /* Hacemos visible la imagen solo en móvil */
-        grid-column: 1 / span 2; /* Ocupa todo el ancho debajo del texto */
+        display: block;
+        grid-column: 1 / span 2;
         grid-row: 2;
         width: 100%;
-        aspect-ratio: 16/9; /* Proporción idéntica a la Home */
+        aspect-ratio: 16/9;
         overflow: hidden;
         border-radius: 8px;
         position: relative;
     }
 
-    /* 6. Estilos de la imagen interna (featuredImg) */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .mobileProjectImg img {
         width: 100%;
         height: 100%;
@@ -419,7 +420,6 @@ body .videoBackgroundWeb {
         transition: transform 0.7s cubic-bezier(0.2, 1, 0.3, 1);
     }
 
-    /* Efecto de zoom de la Home al interactuar con la tarjeta */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem:hover .mobileProjectImg img { 
         transform: scale(1.05); 
     }
