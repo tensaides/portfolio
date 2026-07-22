@@ -362,18 +362,20 @@ body .videoBackgroundWeb {
         padding-right: 0; 
     }
 
-    /* Transformación a Rejilla de Cards */
+    /* Contenedor principal de la lista */
     .mainContentWeb .projectContainer .projectsListContainer {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 3.5rem; /* Espacio vertical entre proyectos */
         width: 100%;
     }
 
+    /* Cambiamos la tarjeta a Flexbox Vertical */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem {
-        display: grid !important;
-        grid-template-columns: 1fr auto;
-        gap: 1rem;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem; /* Espaciado uniforme entre título, chips e imagen */
         padding: 0;
         border-bottom: none;
     }
@@ -386,31 +388,33 @@ body .videoBackgroundWeb {
         color: var(--highlight);
     }
 
+    /* Título: ocupa el 100% del ancho disponible */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .title {
-        grid-column: 1;
-        grid-row: 1;
+        width: 100%;
         font-size: 1.5rem;
         font-weight: 400;
         margin: 0;
+        line-height: 1.25;
     }
 
+    /* Chips: se sitúan debajo del título y alineadas a la izquierda */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .chips {
-        grid-column: 2;
-        grid-row: 1;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 6px;
+        width: 100%;
     }
 
+    /* Imagen responsive */
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .mobileProjectImg {
         display: block;
-        grid-column: 1 / span 2;
-        grid-row: 2;
         width: 100%;
         aspect-ratio: 16/9;
         overflow: hidden;
         border-radius: 8px;
         position: relative;
+        margin-top: 0.25rem;
     }
 
     .mainContentWeb .projectContainer .projectsListContainer .menuItem .mobileProjectImg img {
