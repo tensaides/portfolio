@@ -35,24 +35,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const aboutContainer = document.getElementById("aboutHorizontalContainer");
 
     if (aboutWrapper && aboutContainer) {
-        function getAboutScrollAmount() {
-            let containerWidth = aboutContainer.scrollWidth;
-            return -(containerWidth - window.innerWidth);
-        }
+        
+        // Usamos matchMedia de GSAP para aislar el efecto solo en Desktop
+        let mm = gsap.matchMedia();
 
-        const tween = gsap.to(aboutContainer, {
-            x: getAboutScrollAmount,
-            ease: "none",
-        });
+        mm.add("(min-width: 901px)", () => {
+            function getAboutScrollAmount() {
+                let containerWidth = aboutContainer.scrollWidth;
+                return -(containerWidth - window.innerWidth);
+            }
 
-        ScrollTrigger.create({
-            trigger: aboutWrapper,
-            start: "top top",
-            end: () => `+=${getAboutScrollAmount() * -1}`,
-            pin: true,
-            animation: tween,
-            scrub: 1,
-            invalidateOnRefresh: true,
+            const tween = gsap.to(aboutContainer, {
+                x: getAboutScrollAmount,
+                ease: "none",
+            });
+
+            ScrollTrigger.create({
+                trigger: aboutWrapper,
+                start: "top top",
+                end: () => `+=${getAboutScrollAmount() * -1}`,
+                pin: true,
+                animation: tween,
+                scrub: 1,
+                invalidateOnRefresh: true,
+            });
         });
     }
 
