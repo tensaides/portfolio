@@ -286,14 +286,19 @@
     
     .panelSplitStart, .panelSplitTextImg { flex-direction: column; height: auto; width: 100%; }
     .horizPanel { width: 100%; height: auto; }
-    .horizPanel, .splitHalf, .splitLeftInfoContent p { width: 100%; 
-    height: auto;
-    font-size: 1.4rem;
-    font-weight: 200; }
-
-    .splitHalf, .splitTextLeft, .splitSvgRight { width: 100%; height: 100vh; }
     
-    .splitIntroBlack { min-height: 60vh; padding: 2rem; }
+    .horizPanel, .splitHalf, .splitLeftInfoContent p { 
+        width: 100%; 
+        height: auto; 
+        font-size: 1.4rem; 
+        font-weight: 200; 
+    }
+
+    /* Aquí cambiamos el 100vh por auto para que el contenedor pueda crecer */
+    .splitHalf, .splitTextLeft, .splitSvgRight { width: 100%; height: auto; }
+    
+    /* Añadimos padding superior (100px) para que el header no pise el texto y min-height para que como mínimo ocupe la pantalla */
+    .splitIntroBlack { min-height: 100vh; padding: 100px 2rem 4rem 2rem; }
     .splitImageRight { height: 50vh; }
     
     .hugeInfoTitle { font-size: 20vw; }
@@ -385,46 +390,47 @@
     font-size: 0.8rem; 
 }
 
-/* --- RESPONSIVE  --- */
-
+/* --- RESPONSIVE EXPERIENCE --- */
 @media screen and (max-width: 900px) {
-    .experienceItem { grid-template-columns: 60px 1fr auto; grid-template-rows: auto auto; gap: 0.5rem 1rem; }
-    .expAvatar { grid-column: 1; grid-row: 1 / 3; }
-    .expCompany { grid-column: 2; grid-row: 1; }
-    .expDate { grid-column: 3; grid-row: 1; text-align: right; }
-    .expRole { grid-column: 2 / 4; grid-row: 2; }
-    .expChips { grid-column: 1 / 4; grid-row: 3; justify-content: flex-start; }
-}
-
-.expChips { 
-    grid-column: 5; 
-    display: flex; 
-    gap: 8px; 
-    justify-content: flex-end; 
-    flex-wrap: wrap; 
-}
-
-
-.expChips .chip { 
-    display: inline-block;
-    padding: 5px 10px;          
-    border-radius: 4px;             
-    color: var(--text);         
-    font-size: 0.8rem;          
-    text-transform: uppercase;  
-    letter-spacing: 2px;         
-    transition: all .18s ease;  
-    white-space: nowrap;        
-}
-
-
-@media screen and (max-width: 900px) {
+    .experienceItem { 
+        grid-template-columns: 60px 1fr; /* Ahora solo usamos 2 columnas: Icono e Info */
+        grid-template-rows: auto auto auto auto; /* 4 filas */
+        gap: 0.25rem 1rem; 
+        align-items: center;
+    }
     
-    .expChips { 
-        grid-column: 1 / 4; 
+    /* 1. Fecha: Arriba del todo, ocupando el ancho entero y a la izquierda */
+    .expDate { 
+        grid-column: 1 / 3; 
+        grid-row: 1; 
+        text-align: left; 
+        margin-bottom: 0.5rem; 
+    }
+    
+    /* 2. Avatar: A la izquierda, al lado del nombre y el rol */
+    .expAvatar { 
+        grid-column: 1; 
+        grid-row: 2 / 4; 
+    }
+    
+    /* 3. Nombre Empresa */
+    .expCompany { 
+        grid-column: 2; 
+        grid-row: 2; 
+    }
+    
+    /* 4. Rol */
+    .expRole { 
+        grid-column: 2; 
         grid-row: 3; 
+    }
+    
+    /* 5. Chips: Abajo del todo */
+    .expChips { 
+        grid-column: 1 / 3; 
+        grid-row: 4; 
         justify-content: flex-start; 
-        margin-top: 8px;
+        margin-top: 12px;
     }
 }
 /* =========================================
